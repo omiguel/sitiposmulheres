@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#"
+     xml:base="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#veste -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#veste">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rosto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bonita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bonita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#deCorpo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#deCorpo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rosto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#kinderovo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#kinderovo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#meuPiorPesadelo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#meuPiorPesadelo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nuncaPegaremos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nuncaPegaremos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bonita"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#mulheres"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#plank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#plank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#quaseSem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#quaseSem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rBonita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rBonita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rFeia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rFeia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#raimunda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#raimunda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rosto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rosto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#snorlax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#snorlax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#surpresa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#surpresa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#umDiaChegoLa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#umDiaChegoLa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bonita"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#deCorpo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#plank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#snorlax"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nuncaPegaremos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rBonita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rBonita"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rFeia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#umDiaChegoLa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#quaseSem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rosto"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#meuPiorPesadelo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#plank"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#quaseSem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rFeia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#snorlax"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#raimunda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#kinderovo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rosto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#snorlax"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#surpresa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
