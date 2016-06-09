@@ -25,9 +25,29 @@
     <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#naoPossui -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#naoPossui">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#tipoMulheres"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#corpo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#naoPossui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#não_é_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#não_é_de">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#é_de"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#não_é_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#tipoMulheres"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -35,8 +55,13 @@
     <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#tipoMulheres"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -44,8 +69,28 @@
     <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#veste -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#veste">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#tipoMulheres"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#roupa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#veste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#é_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#é_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#é_de"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#tipoMulheres"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -328,11 +373,333 @@
     
 
 
-    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nuca_pegaremos -->
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angela -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nuca_pegaremos">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#loira"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo_angels"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#olho_azul_ou_verde"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui_pinto"/>
+        <veste rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#preto_basico"/>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angela</nome>
+        <sobrenome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mendes</sobrenome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito">
         <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nuncaPegaremos"/>
-        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nunca pegaremos</tipoMulher>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anjo perfeito</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bigode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bigode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">busso</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#cabelo_liso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#cabelo_liso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabelo liso</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#enorme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#enorme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#snorlax"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gorda</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#raimunda"/>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feia de cara boa de bunda</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#deCorpo"/>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feia de corpo bonita de rosto</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gorda_do_boreu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gorda_do_boreu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+        <naoPossui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo_angels"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#bigode"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#enorme"/>
+        <veste rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#xadrez_com_listra"/>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joana</nome>
+        <sobrenome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abreu</sobrenome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#umDiaChegoLa"/>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linda</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#loira -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#loira">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loira</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#magricela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#magricela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#plank"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magra</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo_angels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo_angels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#modelo"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corpo sarado de modelo</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#meuPiorPesadelo"/>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muito feia mesmo</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nariguda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#nariguda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nariz grande</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#olho_azul_ou_verde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#olho_azul_ou_verde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#angelical"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">olho claro</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">piriguete</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui_pinto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui_pinto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#surpresa"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">possui pinto</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#preto_basico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#preto_basico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rBonita"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <vestimenta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preto basico</vestimenta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#scarlett -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#scarlett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+        <naoPossui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#possui_pinto"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#loira"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#olho_azul_ou_verde"/>
+        <possui rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        <veste rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#shortinho_e_regata"/>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scarlett</nome>
+        <sobrenome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">johansson</sobrenome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#shortinho_e_regata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#shortinho_e_regata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#quaseSem"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <vestimenta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roupa curta demais</vestimenta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#kinderovo"/>
+        <tipoMulher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">travesti</tipoMulher>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#verruga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#verruga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#gremilin"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verruga no rosto</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <caracteristica rdf:datatype="http://www.w3.org/2001/XMLSchema#string">violao</caracteristica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#xadrez_com_listra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#xadrez_com_listra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rFeia"/>
+        <não_é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#anjo_perfeito"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_cara_boa_de_bunda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#feia_de_corpo_bonita_de_rosto"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#linda"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#muito_muito_feia"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#piriguete"/>
+        <é_de rdf:resource="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#travesti"/>
+        <vestimenta rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blusa xadres calça listrada</vestimenta>
     </owl:NamedIndividual>
     
 
@@ -373,6 +740,15 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#rFeia"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#umDiaChegoLa"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#violao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#caracteristicas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#pessoa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#tipoMulheres"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ufsc/ontologies/2016/tipos_mulheres#vestimenta"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
